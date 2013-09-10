@@ -12,9 +12,12 @@ informal manner. Everyone is welcome to join our talks and contribute
 from time to time...</p>
 <h3>Upcoming lectures</h3>
 <ul>
-  {% for post in site.posts reversed %}
+  {% for post in site.categories.lecture reversed %}
     <li>
-      <a href="{{ post.url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
+      <a href="{{ post.url }}">
+        {{ post.date | date_to_string }}:
+        &quot;{{ post.title }}&quot; by {{ post.lecturers }}
+      </a>
     </li>
   {% endfor %}
 </ul>

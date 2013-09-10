@@ -328,6 +328,32 @@ footer {
 	padding-left: 50px;
 }
 
+/* Lecture */
+
+table.lecture-info, table.lecture-info tr, table.lecture-info td
+{
+  border : 0pt;
+  background : none;
+  height : auto;
+  margin : 0pt;
+  padding : 0pt;
+  width : auto;
+}
+
+table.lecture-info
+{
+  margin-left : 4ex;
+  margin-bottom : 4ex;
+  border-collapse: collapse;
+  font-style : italic;
+}
+
+table.lecture-info td
+{
+  padding-right : 1ex;
+}
+
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
