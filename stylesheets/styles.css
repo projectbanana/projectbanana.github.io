@@ -222,11 +222,11 @@ header {
 	-webkit-font-smoothing: antialiased;
 }
 
-p.header {
+header p {
 	font-size: 16px;
 }
 
-h1.header {
+header h1 {
 	font-family: Arvo, sans-serif;
 	font-size: 30px;
 	font-weight: 300;
@@ -236,11 +236,11 @@ h1.header {
 }
 
 
-h1.header, a.header, a.name, header a{
+header h1, header a.header, a.name, header a {
 	color: #fff;
 }
 
-a.header {
+header a {
 	text-decoration: underline;
 }
 
