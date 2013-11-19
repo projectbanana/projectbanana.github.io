@@ -1,0 +1,101 @@
+\documentclass{beamer}
+
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+\usepackage{default}
+\usepackage{tabularx}
+
+
+\title{Using \texttt{git} for version control}
+\author{Manuel Baumann, Joost van Zwieten}
+
+\begin{document}
+
+\frame{\titlepage}
+\begin{frame}
+\frametitle{What is Project baNaNa ?}
+Many (math) presentations are far too technical and only some people in the audience can follow.
+
+The aim of project baNaNa is:
+\begin{itemize}
+ \item present every-day tools to each other,
+ \pause
+ \item informal/interactive presentations,
+ \pause
+ \item to talk about practical issues,
+ \pause
+ \item a series of lectures for and by fellow PhD students,
+ \pause
+ \item eating bananas together.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{What is Project baNaNa ?}
+\framesubtitle{More details...}
+In more detail, we were thinking about
+\begin{itemize}
+ \item possible topics:
+ \begin{itemize}
+ \item Python
+ \item CUDA/OpenCL
+ \item Open Foam
+ \item MPI
+ \item latex `best practice'
+ \end{itemize}
+ \item a classical lecture:
+  \begin{itemize}
+ \item approx. 20 mins
+ \item once a month
+ \item everybody contributes from time to time
+ \item shows many examples
+ \end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Today's lecture: \texttt{git}}
+Do you know this situation?
+
+TODO: screen shot
+\end{frame}
+
+\begin{frame}
+\frametitle{Today's lecture: \texttt{git}}
+The pre-installed software package \texttt{git} can be used for version control for a (bigger) software project.
+\begin{itemize}
+ \item helps to keep track of changes in your project directory
+ \item branching, merging
+ \item collaboration
+ \item several sites allow you to publish your \texttt{git} repository (github, bitbucket, gitorious) 
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Today's lecture: \texttt{git}}
+\framesubtitle{More details...}
+The most important commands:
+
+\begin{table}
+\begin{tabularx}{\textwidth}{l|X}
+Command & Meaning \\
+ \hline
+ \texttt{git init} & First command, makes current folder a \texttt{git} repository\\
+ \texttt{git add <file>} & Stages a file\\
+ \texttt{git command -m <message>} & Record changes to the repository\\
+ \texttt{git status} & Show the working tree status\\
+\end{tabularx}
+\end{table}
+\end{frame}
+\begin{frame}
+\frametitle{Branching}
+\framesubtitle{The typical work flow}
+\end{frame}
+\begin{frame}
+Live demonstration...
+\end{frame}
+\begin{frame}
+\frametitle{(Biased) Comparison \texttt{git} vs. \texttt{Dropbox}}
+\begin{itemize}
+ \item sensitive information in dp
+\end{itemize}
+\end{frame}
+\end{document}
