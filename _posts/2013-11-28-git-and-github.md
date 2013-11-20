@@ -4,6 +4,7 @@ title: Git and Github
 category: lecture
 lecturers: Manuel Baumann and Joost van Zwieten
 location: Lipkenszaal LB 01.150
+time: 17.00
 ---
 
 The first lecture will be about how to use [Git] and [Github].  Git is a
