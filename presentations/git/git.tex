@@ -4,11 +4,12 @@
 \setlength{\parindent}{0pt}
 \usepackage{default}
 \usepackage{tabularx}
-
+\usepackage{url}
 
 \title{Using \texttt{git} for version control}
 \author{Manuel Baumann, Joost van Zwieten}
-
+\date{November 28, 2013}
+%\logo{../../images/logo}
 \begin{document}
 
 \frame{\titlepage}
@@ -80,22 +81,51 @@ Command & Meaning \\
  \hline
  \texttt{git init} & First command, makes current folder a \texttt{git} repository\\
  \texttt{git add <file>} & Stages a file\\
- \texttt{git command -m <message>} & Record changes to the repository\\
+ \texttt{git commit -m <message>} & Record changes to the repository\\
  \texttt{git status} & Show the working tree status\\
+ \texttt{git diff} & Show changes between commits, commit and working tree, etc\\
 \end{tabularx}
 \end{table}
+\hfill $\hookrightarrow$ live demonstration...
 \end{frame}
 \begin{frame}
 \frametitle{Branching}
 \framesubtitle{The typical work flow}
 \end{frame}
 \begin{frame}
-Live demonstration...
+\frametitle{Today's lecture: \texttt{git}}
+\framesubtitle{More details...}
+Even more important commands:
+\begin{table}
+\begin{tabularx}{\textwidth}{l|X}
+Command & Meaning \\
+ \hline
+ \texttt{git branch} & List, create, or delete branches\\
+ \texttt{git checkout} & Checkout a branch or paths to the working tree\\
+ \texttt{git merge} & Join two or more development histories together\\
+ \texttt{git mergetool} & Run merge conflict resolution tools to resolve merge conflicts\\
+\end{tabularx}
+\end{table}
+\hfill $\hookrightarrow$ live demonstration...
 \end{frame}
 \begin{frame}
 \frametitle{(Biased) Comparison \texttt{git} vs. \texttt{Dropbox}}
 \begin{itemize}
  \item sensitive information in dp
 \end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Further reading}
+\begin{itemize}
+ \item \url{https://github.com/}
+ \item \url{http://try.github.io/levels/1/challenges/1}
+ \item \url{http://git-scm.com/book}
+ \item hints on \url{http://projectbanana.github.io/}
+\end{itemize}
+\begin{figure}
+\centering
+ \includegraphics[height=0.4\textheight]{../../images/logo}
+\end{figure}
+
 \end{frame}
 \end{document}
