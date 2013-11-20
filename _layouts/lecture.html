@@ -2,7 +2,7 @@
 <h3>{{ page.title }}</h3>
 <table class="lecture-info">
   <tr><td>who:</td><td>{{ page.lecturers }}</td></tr>
-  <tr><td>when:</td><td>{{ page.date | date_to_string }} at {{page.time}}</td></tr>
+  <tr><td>when:</td><td>{{ page.date | date: "%d %B %Y at %H:%M" }}</td></tr>
   <tr><td>where:</td><td>{{ page.location }}</td></tr>
 </table>
 {{ content }}
