@@ -58,6 +58,7 @@ In more detail, we were thinking about
  \end{itemize}
 \end{itemize}
 \end{frame}
+
 \begin{frame}
 \frametitle{Today's lecture: \texttt{git}}
 Do you know this situation?
@@ -77,11 +78,44 @@ The pre-installed software package \texttt{git} can be used for version control 
  \item several sites allow you to publish your \texttt{git} repository (github, bitbucket, gitorious) 
 \end{itemize}
 \end{frame}
-\begin{frame}
-\frametitle{Today's lecture: \texttt{git}}
-\framesubtitle{More details...}
-The most important commands:
 
+\begin{frame}
+\frametitle{Git basics}
+Git stores snapshots (called \emph{commits} in git) of files in a repository.
+
+A commit consists of
+\begin{itemize}
+ \item a set of files,
+ \item a message,
+ \item an author,
+ \item a date,
+ \item references to one or more parent commits and
+ \item a hash (of the above).
+\end{itemize}
+
+You are in control of creating commits!
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Git basics}
+\begin{description}[working directory]
+ \item[working directory]
+  Plain directory where you can edit files using your favourite editor.
+ \item[staging area]
+  Area listing the files to be commited.
+ \item[repository]
+  Collection of commits.
+\end{description}
+
+Everything is stored locally (in the working directory):
+\begin{description}[working directory]
+ \item[repository] \verb|working_directory/.git|
+ \item[staging area] \verb|working_directory/.git/index|
+\end{description}
+\end{frame}
+
+\begin{frame}
+\frametitle{Basic commands}
 \begin{table}
 \begin{tabularx}{\textwidth}{l|X}
 Command & Meaning \\
@@ -96,14 +130,20 @@ Command & Meaning \\
 \end{table}
 \hfill $\hookrightarrow$ live demonstration...
 \end{frame}
-% \begin{frame}
-% \frametitle{Branching}
-% \framesubtitle{The typical work flow}
-% \end{frame}
+
 \begin{frame}
-\frametitle{Today's lecture: \texttt{git}}
-\framesubtitle{More details...}
-Even more important commands:
+\frametitle{Branches}
+\begin{itemize}
+ \item Branching is the git-equivalent of making a copy of your working
+ directory.
+ \item Branching is cheap.  Use it whenever you can.
+ \item Git is very good in merging (two or more) branches.
+ \item NOTE: Your working directory points to only one branch.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Commands for branching and merging}
 \begin{table}
 \begin{tabularx}{\textwidth}{l|X}
 Command & Meaning \\
@@ -146,6 +186,6 @@ These slides, and much more, will be published at:
 \centering
  \includegraphics[height=0.3\textheight]{../../images/logo}
 \end{figure}
-
 \end{frame}
+
 \end{document}
