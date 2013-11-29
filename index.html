@@ -20,6 +20,15 @@ from time to time...</p>
       </a>
     </li>
   {% endfor %}
+<h3>Previous lectures</h3>
+  {% for post in site.categories.given_lecture %}
+    <li>
+      <a href="{{ post.url }}">
+        {{ post.date | date_to_string }}:
+        &quot;{{ post.title }}&quot; by {{ post.lecturers }}
+      </a>
+    </li>
+  {% endfor %}
 </ul>
 
 <!-- vim: ts=2:sts=2:sw=2:et:tw=80
