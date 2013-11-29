@@ -14,6 +14,8 @@ software project.  We will show some of the basic commands and demonstrate how
 to use it for a new project.  FYI: This homepage has also been built by
 [Joost], [Guido] and [Manuel] using Github.
 
+Please find the slides of our presentation here.
+
 [Git]: http://git-scm.com
 [Github]: https://github.com
 [Joost]: https://github.com/joostvanzwieten
