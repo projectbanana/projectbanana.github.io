@@ -6,33 +6,53 @@
 \usepackage{tabularx}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amssymb,amsmath,amsthm,mathrsfs,mathtools,amscd,stmaryrd}
+\usepackage{mathrsfs}
+
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+
+\newenvironment{recap}{\begin{small}\color{gray}\begin{flushright}}{\end{flushright}\end{small}}
+
 
 \title{\huge{Citation Management with \texttt{JabRef}}}
 \author{\underline{Manuel Baumann}, Jan Heiland}
 \titlegraphic{
    \includegraphics[scale=0.08]{images/TU_Delft_logo1.png}\hspace{4cm}\includegraphics[scale=0.15]{../../images/logo}}
 \date{\footnotesize{December 19, 2013}}
+
 \begin{document}
 
 \frame{\titlepage}
-\begin{frame}
-\frametitle{\Latex and bib-files}
-Many (math) presentations are far too technical and only some people in the audience can follow.
 
-The aim of project ba\color{red}NaN\color{black}a is:
-\begin{itemize}
- \item present every-day tools to each other,
- \pause
- \item informal/interactive presentations,
- \pause
- \item focus on software, applications, ...
- \pause
- \item a series of lectures for and by fellow PhD students,
- \pause
- \item there is no grading whatsoever, 
- \pause
- \item eating bananas together.
-\end{itemize}
+\begin{frame}[fragile]
+\frametitle{\LaTeX \ and bib-files}
+How bibtex is used in \LaTeX:
+\vspace{1cm}
+\begin{small}
+\lstset{language=[LaTeX]TeX,
+texcsstyle=*\bf\color{blue},
+numbers=none,
+breaklines=true,
+keywordstyle=\color{darkgreen},
+commentstyle=\color{darkgreen},
+frame=none,
+tabsize=2}
+\begin{lstlisting}
+\documentclass{article}
+\usepackage{hyperref}	    % very fancy; else:'cite'
+
+\begin{document}
+
+blabla, cf. \cite{GSZ11}  % cite a reference
+
+\bibliography{my_bib}     % use file 'my_bib.bib'
+\bibliographystyle{plain}
+
+\end{document}
+\end{lstlisting}
+\end{small}
 \end{frame}
 
 \begin{frame}
