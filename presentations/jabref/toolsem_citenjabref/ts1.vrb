@@ -1,0 +1,22 @@
+A bibtex file\ldots
+
+\ldots a bib file is a plain text file that contains arbitrary high numbers of bib-entries
+
+\begin{small}
+\begin{lstlisting}
+
+@BOOK{Cia02,
+title = {The finite element method for elliptic problems},
+publisher = {SIAM},
+year = {2002},
+author = {Ciarlet, P. G.},
+volume = {40},
+series = {Classics in Applied Mathematics},
+address = {Philadelphia, PA}
+}
+
+\end{lstlisting}
+\end{small}
+
+and Jabref can help to handle it\ldots
+

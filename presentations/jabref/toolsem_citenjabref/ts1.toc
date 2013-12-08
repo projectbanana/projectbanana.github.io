@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Latex, Bibtex and bib-files}{3}{0}{1}
+\beamer@sectionintoc {2}{Handling of bib-files with Jabref}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Jabref}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Basic Functionality}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Import of Bib-Entries}{7}{0}{2}
+\beamer@subsectionintoc {2}{4}{Interplay with the Latex Editor}{8}{0}{2}
+\beamer@sectionintoc {3}{Citations in Math-Manuscripts}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Where to Take from}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{When to Use}{10}{0}{3}

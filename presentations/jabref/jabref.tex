@@ -49,7 +49,7 @@ tabsize=2}
 
 \begin{document}
 
-blabla, cf. \cite{GSZ11}  % cite a reference
+See, \cite{Saad93}.       % cite a reference
 
 \bibliography{my_bib}     % use file 'my_bib.bib'
 \bibliographystyle{plain}
@@ -69,14 +69,14 @@ texcsstyle=*\bf\color{blue},
 numbers=none,
 breaklines=true,
 keywordstyle=\color{blue},
-morekeywords={*,@ARTICLE,S93},
+morekeywords={*,@ARTICLE},
 frame=none,
 tabsize=2,
 emph={author, title, journal, year, volume, pages, file, owner, timestamp},
 emphstyle={\color{tudblue}}
 }
 \begin{lstlisting}
-@ARTICLE{(*@\color{darkgreen}S93@*),
+@ARTICLE{(*@\color{darkgreen}Saad93@*),
   author    = {Y. Saad},
   title     = {A flexible inner-outer preconditioned            {GMRES} algorithm},
   journal   = {SIAM J. Sci. Comput.},
@@ -91,28 +91,27 @@ emphstyle={\color{tudblue}}
 \end{footnotesize}
 \end{frame}
 
-
-
 \begin{frame}
 \frametitle{What is \texttt{JabRef}?}
 \framesubtitle{Basic Functionality}
-The tool \texttt{Jabref} \ldots
+\vspace{0.6cm}\\
+The tool \texttt{Jabref} \ldots \\
 \begin{itemize}
 \item \ldots is GPL software 
 \item \ldots comes for all platforms
 \item \url{http://sourceforge.net/projects/jabref/}
 \end{itemize}
-Moreover, \texttt{Jabref} can
+\vspace{0.5cm}\\
+Moreover, \texttt{Jabref} can\\
 \begin{itemize}
 \item open several bibs in a GUI
 \item sort them by author, title, year, etc.
-\item copy and paste between the libs
+%\item copy and paste between the libs
 \item edit the entries
 \item assign files like PDFs to the entries
-\item auto-generate keys \texttt{[author] [year]}
-\end{itemize}
-\hfill
-$\hookrightarrow$live performance
+\item auto-generate citation keys \texttt{[author][year]}
+\end{itemize}\\
+\hfill $\hookrightarrow$ live performance
 \end{frame}
 
 \begin{frame}
@@ -122,12 +121,12 @@ Importing of bibtex entries:
 \begin{itemize}
  \item via copy-n-paste from other bib-files
  \item from plain text
- \item from the internet [later]
+ \item from the Internet
 \end{itemize}
 
 Interplay with the Latex Editor:
 \begin{itemize}
- \item ctrl-K copies  ``$\backslash$cite$\{$currentKey$\}$`` to the clipboard
+ \item ctrl-K copies  ``$\backslash$cite$\{$citationKey$\}$`` to the clipboard
 \end{itemize}
 \vfill
 \hfill
@@ -144,8 +143,12 @@ However, this is how you can manually install it:
  \item Go to \url{http://jabref.sourceforge.net/download.php}
  \item Download \texttt{JabRef.jar}
  \item Type in the terminal: \texttt{java -jar JabRef.jar}
- \item Follow the instructions (or ask Joost)
+ \item Follow the instructions
+ \pause
+ \item or, simply ask Joost
 \end{enumerate}
+\pause
+Maybe, don't start with step \color{blue}6.\color{black}
 \end{frame}
 
 \begin{frame}
@@ -156,8 +159,9 @@ Bibtex entries are provided by most of the services that list or host scientific
 \item \url{http://www.ams.org/mathscinet/index.html}
 \item \url{http://www.zentralblatt-math.org/zmath/en/search/} ( features a ``TU'' button )
 \item \url{http://www.sciencedirect.com/}
+\item and also most of the preprint servers 
 \end{itemize}
-and also most of the preprint servers\ldots
+Q: How do you do it?
 \end{frame}
 
 
@@ -166,8 +170,8 @@ and also most of the preprint servers\ldots
 Many information are available online:
 \begin{itemize}
  \item \url{http://www.cs.rpi.edu/~tayloj/JABREF.TUTORIAL/}
- \item \url{http://try.github.io/levels/1/challenges/1}
- \item \url{http://git-scm.com/book}
+ \item \url{todo}
+ \item \url{todo}
 \end{itemize}
 I will put all example files on:
 \begin{itemize}

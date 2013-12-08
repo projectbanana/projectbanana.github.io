@@ -7,7 +7,7 @@
 
 \section{Bananas are awesome}
 For the proof, see \cite{SG08}.
-
+\cite{Saad93}
 \bibliography{my_bib}
 \bibliographystyle{plain}
 

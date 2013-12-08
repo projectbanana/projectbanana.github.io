@@ -1,4 +1,4 @@
-% This file was created with JabRef 2.9.2.
+% This file was created with JabRef 2.7b.
 % Encoding: ANSI_X3.4-1968
 
 @ARTICLE{SBK12,
@@ -54,7 +54,20 @@
   timestamp = {2013.09.04}
 }
 
-@BOOK{Saad03,
+@ARTICLE{SG08,
+  author = {P. Sonneveld, M.B. van Gijzen},
+  title = {{IDR}(s): {A} family of simple and fast algorithms for solving large
+	nonsymmetric systems of linear equations},
+  journal = {SIAM J. Sci. Comput.},
+  year = {2008},
+  volume = {31},
+  pages = {1035-1062},
+  file = {:/home/manuel/PhD/Literature/IDR.pdf:PDF},
+  owner = {manuel},
+  timestamp = {2013.12.05}
+}
+
+@BOOK{Saad2003,
   title = {Iterative Methods for Sparse Linear Systems},
   publisher = {Society for Industrial and Applied Mathematics},
   year = {2003},
@@ -65,14 +78,14 @@
   isbn = {0898715342}
 }
 
-@ARTICLE{S93,
+@ARTICLE{Saad93,
   author = {Y. Saad},
   title = {A flexible inner-outer preconditioned {GMRES} algorithm},
   journal = {SIAM J. Sci. Comput.},
   year = {1993},
   volume = {14},
   pages = {461-469},
-  file = {:Literature/Saad_flexibleGMRES.pdf:PDF},
+  file = {:/home/manuel/PhD/Literature/Saad_flexibleGMRES.pdf:PDF},
   owner = {manuel},
   timestamp = {2013.09.09}
 }
@@ -112,4 +125,3 @@
   owner = {manuel},
   timestamp = {2013.11.29}
 }
-

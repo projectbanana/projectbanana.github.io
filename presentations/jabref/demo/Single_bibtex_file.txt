@@ -1,0 +1,8 @@
+@ARTICLE{Saad93,
+  author    = {Y. Saad},
+  title     = {A flexible inner-outer preconditioned {GMRES} algorithm},
+  journal   = {SIAM J. Sci. Comput.},
+  year      = {1993},
+  volume    = {14},
+  pages     = {461-469},
+}
