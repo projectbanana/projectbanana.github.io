@@ -1,0 +1,3 @@
+#! /bin/sh
+
+java -jar $HOME/.local/share/jabref/JabRef-2.9.2.jar

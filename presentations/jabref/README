@@ -1,0 +1,8 @@
+Hi everyone,
+
+in the folder you just downloaded you will find the following files:
+
+   * pdf-file of my presentation slides,
+   * /demo folder with (hopefully) working .tex file and corresponding .bib reference file,
+   * Latest version of JabRef, namely 'JabRef-2.9.2.jar',
+   * The script 'jabref'. This file needs to be copied to your folder ~/.local/bin. Moreover, you need to change everything after $HOME to the directory where your 'JabRef-2.9.2.jar' is saved. Now, you can run JabRef from the terminal via the command 'jabref' :)
