@@ -1,0 +1,393 @@
+\documentclass{beamer}
+%\usepackage{media9}
+
+%\usepackage{hyperref}
+
+% Necessary definitions:
+%\setbeamersize{sidebar width left=0.5cm}
+%\usepackage[dutch]{babel}
+\usepackage{tikz}
+%\usepackage{cancel}
+\usepackage[asdasd]{optional}
+\usepackage{mathrsfs}
+\usepackage{bbm}%\ind
+\usepackage[normalem]{ulem}
+\usepackage{fancyvrb}
+\usepackage{color}
+\usepackage[latin1]{inputenc}
+\usepackage{minted}
+ % % % % % % % % % % % % % % % % % % %
+\usepackage{xparse}
+\usepackage{lineno}
+\ExplSyntaxOn
+\box_new:N \l_fvrb_box
+\tl_new:N \l_fvrb_tl
+
+\RenewDocumentCommand \FancyVerbFormatLine { m }
+ {
+   \hbox_set:Nn \l_fvrb_box { #1 }
+    \dim_compare:nNnTF { \box_wd:N \l_fvrb_box }>{ \linewidth }
+      {%box to big 
+       \tl_set:Nn \l_fvrb_tl { #1 }
+       \fvrb_use_tl:N \l_fvrb_tl
+      } 
+      {%box fits
+       \box_use:N \l_fvrb_box
+      }
+ }
+
+\cs_new:Npn \fvrb_use_tl:N  #1
+ {
+  \group_begin:
+   \null\hfill\vbox_set:Nn \l_fvrb_box
+     {\hsize=\linewidth
+      \renewcommand\thelinenumber
+           {
+             \ifnum\value{linenumber}=1\relax\else
+                  %$\rightarrow$
+             \fi
+           }
+      \begin{internallinenumbers}
+        \advance\hsize by -2em
+        \hspace*{-2em}\tl_use:N #1
+      \end{internallinenumbers}
+     }
+   \box_use:N \l_fvrb_box
+  \group_end:
+}
+
+\ExplSyntaxOff
+
+% % % % % % % % % % % % % % % %
+
+\def\dotuline{\bgroup
+  \ifdim\ULdepth=\maxdimen  % Set depth based on font, if not set already
+   \settodepth\ULdepth{(j}\advance\ULdepth.4pt\fi
+  \markoverwith{\begingroup
+  \advance\ULdepth0.08ex
+  \lower\ULdepth\hbox{\kern.15em .\kern.1em}%
+  \endgroup}\ULon}
+
+\def\dashuline{\bgroup
+  \ifdim\ULdepth=\maxdimen  % Set depth based on font, if not set already
+   \settodepth\ULdepth{(j}\advance\ULdepth.4pt\fi
+  \markoverwith{\kern.15em
+  \vtop{\kern\ULdepth \hrule width .3em}%
+  \kern.15em}\ULon}
+
+\mode<presentation>
+{\usetheme{Boadilla} % This theme will be adjusted into the TUDelft lay-out
+\setbeamercovered{transparent}}
+\setbeamersize{text margin left=1cm}
+\setbeamersize{text margin right=1cm}
+
+\beamertemplatenavigationsymbolsempty
+%---------------------------------------------------------------------------------
+%  Take attention for the parts you may change. See the comment lines with: %>>>
+%---------------------------------------------------------------------------------
+%mo
+%\usepackage{graphicx}
+
+\setlength{\parskip}{5pt plus 2pt minus 1pt}
+\sloppy
+
+\providecommand{\cs}{,\,}
+\providecommand{\NN}{\mathbb{N}}
+\providecommand{\ZZ}{\mathbb{Z}}
+\providecommand{\RR}{\mathbb{R}}
+\providecommand{\QQ}{\mathbb{Q}}
+\providecommand{\PP}{\mathbb{P}}
+
+\providecommand{\E}{\mathbb{E}}
+\providecommand{\e}{\mathrm{e}}
+\renewcommand{\P}{\mathbb{P}} %overwriting P = paragraph
+\providecommand{\eins}{\mathbf{1}}
+\providecommand{\ms}[1]{\mathfrak{#1}}
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\sabs}[1]{\left\langle #1\right\rangle}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\ind}[1]{{\mathbbm{1}_{#1}}}
+\providecommand{\inv}{{-1}}
+\providecommand{\iid}{{\ensuremath{\text{\emph{i.i.d.}}}}}
+\newcommand{\dd}{{\,\mathrm d}}
+\providecommand{\Inv}[1]{{\left(#1\right)}^{-1}}
+\providecommand{\forme}[1]{\opt{forme}{\small {#1}}}
+
+%\renewcommand{\complement}[1]{{#1}^{\subset}}
+\renewcommand{\complement}[1]{{#1}^{\mathsf C}}
+\renewcommand{\tilde}{\widetilde}
+\renewcommand{\theta}{\vartheta}
+\renewcommand{\phi}{\varphi}
+
+\newcommand{\pin}[1]{{#1}^\star}
+
+\newcommand{\nought}{\circ}
+\providecommand{\trace}{{\operatorname{tr}}}
+
+\newcommand{\Ell}{{\mathcal L}}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%structure
+\renewcommand{\cite}[2][1]{\nocite{#2}}
+
+
+\definecolor{colora}{rgb}{0,0.8,0.81}
+\definecolor{colorb}{rgb}{0.8,0.2,0}% #CF7100
+\definecolor{colorc}{rgb}{0.2,0.2,0.8}% #CF7100
+\newcommand{\cemph}[1]{{{\color{colorb} #1}}}
+\newcommand{\blue}[1]{{{\color{colorc} #1}}}
+
+
+
+
+
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[page number]{}
+\setbeamertemplate{footline}[frame number]
+
+%gets rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+
+ 
+%>>> You may change the text in this part {Between brackets}:
+%>>> This is for the Title page:
+\newcommand*\titel{}
+%\newcommand*\subkop{Introduction and provisoric outline}
+\newcommand*\naam{}
+\newcommand*\afdeling{TU Delft}
+%>>> This is for the frame-title on the "Table of Contents" page:
+\newcommand*\titelTOC{Outline}
+%>>> This is for the frame-title on the "Table of Contents" page when the next subsection will start:
+\newcommand*\subsectie{Next subsection}
+
+
+%%% Not change this part below %%%
+%%% Title Page (belongs to the theme)%%%
+% Necessary part for the theme:
+\title[]{XXX} % This title also appears in the TUDelft bar on the next pages
+\subtitle{}
+\author[M. Schauer]{Moritz Schauer}
+%\institute[TUD/EUR]{\afdeling}
+\date[Delft '14]{BaNaNa seminar, TU Delft, February, 2014}
+%\AtBeginSubsection[]
+%{\begin{frame}<beamer>\frametitle{\textbf{\LARGE{\textrm{\subsectie}}}}
+%    \tableofcontents[currentsection,currentsubsection]  % Generation of the Table of Contents
+%\end{frame}}
+%\tikzset{textlabel/.style={color=white}}
+\beamertemplatetransparentcovereddynamicmedium
+
+
+\setbeamertemplate{frametitle}
+{
+\textbf{\Large{\textrm{\insertframetitle}}}
+\par
+}
+
+%==============================================================
+%%% Not change this part below, except maybe the folder where you placed the "TUDelft bies"
+\begin{document}
+
+%--------------------------------------------------------------
+\begin{frame}
+\begin{center}
+{\large {\Huge ``} \hspace{4.0cm} \begin{minipage}[c]{15.5mm}\includegraphics[width=15.5mm]{img/logo_hires.png}\end{minipage}\hspace{4.0cm} {\Huge''} \\[2mm]
+ A Fast Dynamic Language for Technical Computing 
+
+\vspace{2cm}
+Created by: Jeff Bezanson, Stefan Karpinski, Viral B. Shah, Alan Edelman et. al.
+
+}
+\end{center}
+\end{frame}
+
+\begin{frame}
+
+{\large
+\begin{center} \begin{minipage}[c]{15.5mm}\includegraphics[width=15.5mm]{img/logo_hires.png}\end{minipage}\end{center}
+
+A sane and friendly programming language which allows
+\begin{itemize}
+\item  to write clean high level code 
+\item and do fast low level number crunching
+\end{itemize}
+in one language within one framework.
+}
+
+
+\end{frame}
+
+
+\begin{frame}\frametitle{Some stated design principles}
+\begin{itemize}
+\item Open source with an MIT licensed core
+\item Dynamically typed with fast user-defined types
+\item Multiple dispatch combined with a parametric type system
+\item JIT compiler - fast vectorized and fast iterative code
+\item Metaprogramming
+\item Single environment to do technical computing and surrounding general programming tasks
+\end{itemize}
+
+\end{frame}
+
+%\section{Friendly and flexible}
+\begin{frame}[fragile]\frametitle{Example: Running average}
+ 
+\begin{minted}[linenos,fontsize=\small]{julia}
+X = cumsum(randn(10^6)) #random walk
+
+# running average of order three, interactive style
+runavg3(X) = [ (X[i-1] + X[i] + X[i+1])/3 for i=2:length(X)-1 ]
+
+function runavg(X, d) #first shot at a generalization
+   n = length(X)
+   Y = similar(X, n - d + 1)
+   Y[1] = mean(X[1:d])
+   for i in 2:(n-d+1)
+       Y[i] = Y[i-1] + 1/d * (X[i-1+d] - X[i-1])
+   end
+   Y
+end
+\end{minted}
+ 
+\end{frame}
+
+\begin{frame}[fragile]
+Julia unimposingly computes the result very fast:
+
+ 
+\begin{minted}[fontsize=\small]{julia}
+julia> @elapsed runavg3(X)
+0.003496773
+
+julia> @elapsed runavg(X,3)
+0.004001902
+
+julia> @elapsed runavg(X,30)
+0.004068611
+
+julia> @elapsed cumsum(X)
+0.004236988
+\end{minted}
+ 
+(Most of this is allocating the new array.)
+
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Type system}
+Two uses
+
+\begin{itemize}
+\item Dynamic: Using types to dispatch the right method at runtime\\
+\begin{minted}[fontsize=\small]{julia}
+expm(A::HermOrSym) = (F = eigfact(A); F.vectors*Diagonal(exp(F.values))*F.vectors')
+\end{minted}
+\item  (Quasi) static: Helping the just-in-time compiler\\
+\begin{minted}[fontsize=\small]{julia}
+julia> xs = 1:5
+julia>[i^3 for i in xs]
+5-element Array{Any,1}
+julia>[i::Int^3 for i in xs]
+5-element Array{Int64,1}
+\end{minted}
+
+\end{itemize}
+
+
+\end{frame}
+ 
+\begin{frame}[fragile]\frametitle{Method dispatch}
+ 
+\begin{minted}[fontsize=\small]{c}
+#define MIN(a,b) (((a)<(b))?(a):(b))
+#define MAX(a,b) (((a)>(b))?(a):(b))
+\end{minted}
+ 
+You remember?
+%\end{frame}
+%\begin{frame}\frametitle{Method dispatch}
+
+\begin{itemize}
+\item[] {\bf Static languanges:} Multiple dispatch, can follow a elaborated pattern, at compile time (function overloading.)
+\item[] {\bf Dynamic languanges:} Single dispatch or no dispatch, simple, at run time.
+\item[] {\bf Julia:} Elaborated, multiple dispatch with promotion rules, but does not slow down JIT'ed code. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Function overloading in C++}
+%http://pic.dhe.ibm.com/infocenter/ratdevz/v8r5/index.jsp?topic=%2Fcom.ibm.tpf.toolkit.compilers.doc%2Fref%2Flangref_os390%2Fcbclr21018.htm
+ You would not want to do this on runtime...
+\begin{minted}[fontsize=\small]{text}
+Argument-matching conversions occur in the following order:
+An exact match, in which the actual arguments exactly match the type and number of formal arguments of one declaration of the overloaded function. This includes a match with one or more trivial conversions.
+A match with promotions in which a match is found when one or more of the actual arguments is promoted
+A match with standard conversions in which a match is found when one or more of the actual arguments is converted by a standard conversion
+A match with user-defined conversions in which a match is found when one or more of the actual arguments is converted by a user-defined conversion
+A match with ellipses 
+\end{minted}
+ 
+(OS/390 V2R10 C/C++ Language Reference)
+\end{frame}
+
+
+\begin{frame}[fragile]\frametitle{Multiple dispatch in Julia}
+{\small
+\begin{minted}[]{julia}
+julia> methods(max)
+# 14 methods for generic function "max":
+max(x::Float64,y::Float64) at math.jl:334
+max(x::Float32,y::Float32) at math.jl:335
+max(x::BigFloat,y::BigFloat) at mpfr.jl:509
+max{T<:Real}(x::T<:Real,y::T<:Real) at promotion.jl:191
+max(x::Real,y::Real) at promotion.jl:172
+max{T1<:Real,T2<:Real}(x::T1<:Real,y::AbstractArray{T2<:Real,N}) at operators.jl:247
+max{T1<:Real,T2<:Real}(x::AbstractArray{T1<:Real,N},y::T2<:Real) at operators.jl:249
+max{T1<:Real,T2<:Real}(x::AbstractArray{T1<:Real,N},y::AbstractArray{T2<:Real,N}) at operators.jl:253
+max(x,y) at operators.jl:35
+max(a,b,c) at operators.jl:67
+max(a,b,c,xs...) at operators.jl:68
+\end{minted}
+}
+\end{frame}
+
+
+
+\begin{frame}[fragile]\frametitle{Metaprogramming}
+%Compare http://hg.savannah.gnu.org/hgweb/octave/file/7eeaecac9b5b/libinterp/corefcn/data.cc
+{\small
+\begin{minted}[linenos]{julia}
+for (fname, felt) in ((:zeros,:zero),
+                      (:ones,:one),
+                      (:infs,:inf), 
+                      (:nans,:nan))
+@eval begin
+($fname){T}(::Type{T}, dims...)   = fill!(Array(T, dims...), ($felt)(T))
+($fname)(dims...) = fill!(Array(Float64, dims...), ($felt)(Float64))
+($fname){T}(x::AbstractMatrix{T}) = ($fname)(T, size(x, 1), size(x, 2))
+end
+end
+\end{minted}
+}
+{
+\small
+\begin{minted}{julia}
+julia> ones(3)
+5-element Array{Float64,1}:
+ 1.0
+ 1.0
+ 1.0
+\end{minted}
+}
+
+\end{frame}
+
+\begin{frame}\frametitle{Word of caution}
+\begin{itemize}
+\item Young language, initial commit 2009, open source 2012
+\item ``Fast moving target``
+\item Memory hungry: Compiled and specialized methods
+\item Limited debugging support
+\end{itemize}
+\end{frame}
+
+\end{document}
