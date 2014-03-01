@@ -7,9 +7,11 @@ location: Van Katwijkzaal HB 03.240
 date: 2014-03-13 17:00:00
 ---
 
-We came up with the idea that whenever there is no time to prepare a fancy presentation, we just meet in the usual baNaNa way, have a banana or two and discuss the details of a famous paper. 
-[trefethen_hp].
+We came up with the idea that whenever there is no time to prepare a fancy presentation, we just meet in the usual baNaNa way, have a banana or two, and discuss the details of a famous paper from applied mathematics. 
+This is in fact not our idea but is based on the list by Prof. Nick Trefethen, see [trefethen_hp].
 
-You can download the QR paper [here](/presentations/householder/householder.pdf).
+For this time, we chose the shortest, and most interesting paper of his list! Our idea is that we meet and discuss the paper together using the blackboard only.
+
+Please [download](/presentations/householder/householder.pdf) the QR paper (in his notation it is actually called UR decomposition).
 
 [trefethen_hp]: http://www.stat.uchicago.edu/~lekheng/courses/302/classics/
