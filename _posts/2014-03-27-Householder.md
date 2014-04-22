@@ -4,7 +4,7 @@ title: Historic papers - Part 1
 category: given_lecture
 lecturers: Alston Scott Householder (himself !)
 location: Van Katwijkzaal HB 03.240
-date: 2014-03-27 17:00:00
+date: 2014-03-27 17:00:00 CET
 ---
 
 We came up with the idea that whenever there is no time to prepare a fancy presentation, we just meet in the usual baNaNa way, have a banana or two, and discuss the details of a famous paper from applied mathematics. 
