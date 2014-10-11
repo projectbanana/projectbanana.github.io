@@ -7,16 +7,7 @@ location: tba
 date: 2014-10-30 17:30:00 CEST
 ---
 
-We want to meet and present to each other ones favourite LaTeX packages and demonstrate what they do. You are also welcome to join if you only have found a quick-and-dirty solution for a specific task. We can discuss and try to find a better solution!
+I recently used [bitbucket] for a joint work with collegues from Magdeburg and Strasbourg. I want to show you why I think this is a perfect tool for collaboration and point out what I think is 'good practice'. In this lecture, we will also repeat basic [git] commands.
 
-In particular, we want to distribute templates for TU Delft slides, technical reports, and -most important- Joost's famous [poster class].
-
-Please bring your compilable TeX snippets on a USB stick.
-
-[poster class]: https://github.com/joostvanzwieten/tudelft-poster
-
-![photo of presentation](/images/2014-04-29-LaTeX/0001.jpg)
-
-![photo of presentation](/images/2014-04-29-LaTeX/0002.jpg)
-
-![photo of presentation](/images/2014-04-29-LaTeX/0003.jpg)
+[bitbucket]: https://bitbucket.org/
+[git]: https://try.github.io/levels/1/challenges/1
