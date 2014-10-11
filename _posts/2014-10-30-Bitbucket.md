@@ -1,7 +1,7 @@
 ---
 layout: lecture
 title: Bitbucket - a tool for international collaboration
-category: ecture
+category: lecture
 lecturers: Manuel
 location: tba
 date: 2014-10-30 17:30:00 CEST
