@@ -7,60 +7,36 @@
 \usepackage{url}
 \usepackage{graphicx}
 
-\title{\huge{Using \texttt{git} for version control}}
-\author{Manuel Baumann, Joost van Zwieten}
+\title{\huge{Using \texttt{bitbucket} for collaboration with international colleagues}}
+\author{Manuel Baumann}
 \titlegraphic{
-   \includegraphics[scale=0.08]{images/TU_Delft_logo1.png}\hspace{4cm}\includegraphics[scale=0.15]{../../images/logo}}
-\date{\footnotesize{November 28, 2013}}
+   \vspace{-0.8cm}\includegraphics[scale=0.08]{images/TU_Delft_logo1.png}\hspace{4cm}\includegraphics[scale=0.15]{../../images/logo}}
+\date{\footnotesize{October 30, 2014}}
 \begin{document}
 
-\frame{\titlepage}
-\begin{frame}
-\frametitle{What is Project baNaNa ?}
-Many (math) presentations are far too technical and only some people in the audience can follow.
+\frame{
+\titlepage
+}
 
-The aim of project ba\color{red}NaN\color{black}a is:
+\begin{frame}
+\frametitle{First, some announcements}
+\vspace{1cm}
+\textit{This is the first ba\color{red}NaN\color{black}a talk in the framework of our new SIAM student chapter.}
 \begin{itemize}
- \item present every-day tools to each other,
+ \item Visit Tata Steel on Nov. 21, 2014
  \pause
- \item informal/interactive presentations,
+ \item Student Krylov Day on Febr. 2, 2015
  \pause
- \item focus on software, applications, ...
- \pause
- \item a series of lectures for and by fellow PhD students,
- \pause
- \item there is no grading whatsoever, 
- \pause
- \item eating bananas together.
+ \item Next ba\color{red}NaN\color{black}a talks: Reinaldo (LAPACK) and Xiaozhou (Python)
 \end{itemize}
+\begin{figure}
+\hfill \includegraphics[scale=0.12]{images/SSC_Delft_new}
+\end{figure}
+
 \end{frame}
 
 \begin{frame}
-\frametitle{What is Project baNaNa ?}
-\framesubtitle{More details...}
-In more detail, we were thinking about
-\begin{itemize}
- \item possible topics:
- \begin{itemize}
- \item Python
- \item CUDA/OpenCL
- \item Open Foam
- \item MPI/OpenMP
- \item latex `best practice'
- \item high end Matlab usage
- \end{itemize}
- \item a classical lecture:
-  \begin{itemize}
- \item approx. 20 mins
- \item once a month
- \item everybody contributes from time to time
- \item \textbf{gives many examples}
- \end{itemize}
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Today's lecture: \texttt{git}}
+\frametitle{Today's lecture: \texttt{git} + \texttt{bitbucket}}
 Do you know this situation?
 \begin{figure}
 \centering
@@ -69,7 +45,7 @@ Do you know this situation?
 \end{frame}
 
 \begin{frame}
-\frametitle{Today's lecture: \texttt{git}}
+\frametitle{Recap: \texttt{git}}
 The pre-installed software package \texttt{git} can be used for version control for a (bigger) software project.
 \begin{itemize}
  \item helps to keep track of changes in your project directory
@@ -156,25 +132,42 @@ Command & Meaning \\
 \end{table}
 \hfill $\hookrightarrow$ live demonstration...
 \end{frame}
-\begin{frame}
-\frametitle{Today's message}
 
-The overall message is:
-\begin{center}
- \textit{Using git is optimal for collaborations and big software projects.}
-\end{center}
-Moreover,
-\begin{itemize}
- \item sensitive information should not be stored in e.g. Dropbox
- \item \texttt{git} branches are non-linear in time
- \item local argument: \texttt{git} is supported (and pre-installed) at TU Delft work stations
-\end{itemize}
+\begin{frame}
+ \frametitle{Some notes on \texttt{bitbucket}}
+ \vspace{1.5cm}
+ \texttt{bitbucket.org} is a place to store your repository.
+ \begin{itemize}
+  \item repos is \textit{private}
+  \item browser-based
+  \item Some nice features: Wiki, issues, ...
+  \item almost unlimited space
+ \end{itemize}
+\begin{figure}
+\hfill \includegraphics[scale=0.35]{images/bitbucket-logo}
+\end{figure}
 \end{frame}
+
+
+% \begin{frame}
+% \frametitle{Today's message}
+% 
+% The overall message is:
+% \begin{center}
+%  \textit{Using git is optimal for collaborations and big software projects.}
+% \end{center}
+% Moreover,
+% \begin{itemize}
+%  \item sensitive information should not be stored in e.g. Dropbox
+%  \item \texttt{git} branches are non-linear in time
+%  \item local argument: \texttt{git} is supported (and pre-installed) at TU Delft work stations
+% \end{itemize}
+% \end{frame}
 \begin{frame}
 \frametitle{Further reading}
 Many information are available online:
 \begin{itemize}
- \item \url{https://github.com/}
+ \item \url{https://bitbucket.org/}
  \item \url{http://try.github.io/levels/1/challenges/1}
  \item \url{http://git-scm.com/book}
 \end{itemize}
