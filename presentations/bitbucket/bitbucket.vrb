@@ -1,0 +1,15 @@
+\frametitle {Git basics}
+\begin{description}[working directory]
+ \item[working directory]
+  Plain directory where you can edit files using your favourite editor.
+ \item[staging area]
+  Area listing the files to be commited.
+ \item[repository]
+  Collection of commits.
+\end{description}
+
+Everything is stored locally (in the working directory):
+\begin{description}[working directory]
+ \item[repository] \verb|working_directory/.git|
+ \item[staging area] \verb|working_directory/.git/index|
+\end{description}
