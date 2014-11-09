@@ -1,7 +1,7 @@
 ---
 layout: lecture
 title: Bitbucket - a tool for international collaboration
-category: lecture
+category: given_lecture
 lecturers: Manuel
 location: Lipkenszaal
 date: 2014-10-30 16:30:00 CEST
