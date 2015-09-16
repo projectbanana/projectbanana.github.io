@@ -1,0 +1,56 @@
+
+% latex make_conv.tex
+% rm -f make_conv.eps; dvips make_conv; ps2eps make_conv.ps
+
+
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{color}
+
+\pgfplotscreateplotcyclelist{my_style}{%
+teal,every mark/.append style={fill=teal!80!black},mark=*\\%
+orange,every mark/.append style={fill=orange!80!black},mark=square*\\%
+cyan!60!black,every mark/.append style={fill=cyan!80!black},mark=diamond*\\%
+red!70!white,densely dashed,mark=star\\%
+lime!80!black,densely dashed,every mark/.append style={solid,fill=lime},mark=diamond*\\%
+red,densely dashed,every mark/.append style={solid,fill=red!80!black},mark=otimes*\\%
+% yellow!60!black,densely dashed,
+% every mark/.append style={solid,fill=yellow!80!black},mark=square*\\%
+% black,every mark/.append style={solid,fill=gray},mark=otimes*\\%
+% blue,densely dashed,mark=star,every mark/.append style=solid\\%
+% red,densely dashed,every mark/.append style={solid,fill=red!80!black},mark=diamond*\\%
+}
+
+
+\begin{document}
+
+\begin{tikzpicture} 
+\begin{semilogyaxis}[width = 12cm, 
+                     height = 10cm,
+                     title={multi-shift GMRES},
+                     xlabel={\# iterations},
+                     xmin = 1,
+%                      xmax = 9,
+%                      xtick={0,...,9},
+                     ylabel={Relative residual norm},
+                     ymax = 1,
+                     ymin = 1e-8,
+                     grid=major,
+                     mark repeat={5},
+                     cycle list name=my_style] 
+                     
+\addplot table [x = {iters}, y = {f}] {resvec1.dat};
+\addplot table [x = {iters}, y = {f}] {resvec2.dat};
+\addplot table [x = {iters}, y = {f}] {resvec3.dat};
+\addplot table [x = {iters}, y = {f}] {resvec4.dat};
+\addplot table [x = {iters}, y = {f}] {resvec5.dat};
+\addplot table [x = {iters}, y = {f}] {resvec6.dat};
+
+% \addplot[color=black,dashed] coordinates { (0,0.1) (170,0.1)}; % inner trashhold
+\legend{$f_1=\phantom{0}5$ Hz,$f_2=\phantom{0}6$ Hz,$f_3=\phantom{0}7$ Hz,$f_4=\phantom{0}8$ Hz,$f_5=\phantom{0}9$ Hz,$f_6=10$ Hz} 
+
+\end{semilogyaxis} 
+\end{tikzpicture}
+
+\end{document}
