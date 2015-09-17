@@ -1,6 +1,6 @@
 
-% latex make_conv.tex
-% rm -f make_conv.eps; dvips make_conv; ps2eps make_conv.ps
+% latex my_ex.tex
+% rm -f my_ex.eps; dvips my_ex; ps2eps my_ex.ps
 
 
 \documentclass{standalone}
@@ -31,7 +31,7 @@ red,densely dashed,every mark/.append style={solid,fill=red!80!black},mark=otime
                      title={multi-shift GMRES},
                      xlabel={\# iterations},
                      xmin = 1,
-%                      xmax = 9,
+                     xmax = 103,
 %                      xtick={0,...,9},
                      ylabel={Relative residual norm},
                      ymax = 1,
@@ -40,12 +40,12 @@ red,densely dashed,every mark/.append style={solid,fill=red!80!black},mark=otime
                      mark repeat={5},
                      cycle list name=my_style] 
                      
-\addplot table [x = {iters}, y = {f}] {resvec1.dat};
-\addplot table [x = {iters}, y = {f}] {resvec2.dat};
-\addplot table [x = {iters}, y = {f}] {resvec3.dat};
-\addplot table [x = {iters}, y = {f}] {resvec4.dat};
-\addplot table [x = {iters}, y = {f}] {resvec5.dat};
-\addplot table [x = {iters}, y = {f}] {resvec6.dat};
+\addplot table [x = {iters}, y = {f1}] {resvec.dat};
+\addplot table [x = {iters}, y = {f2}] {resvec.dat};
+\addplot table [x = {iters}, y = {f3}] {resvec.dat};
+\addplot table [x = {iters}, y = {f4}] {resvec.dat};
+\addplot table [x = {iters}, y = {f5}] {resvec.dat};
+\addplot table [x = {iters}, y = {f6}] {resvec.dat};
 
 % \addplot[color=black,dashed] coordinates { (0,0.1) (170,0.1)}; % inner trashhold
 \legend{$f_1=\phantom{0}5$ Hz,$f_2=\phantom{0}6$ Hz,$f_3=\phantom{0}7$ Hz,$f_4=\phantom{0}8$ Hz,$f_5=\phantom{0}9$ Hz,$f_6=10$ Hz} 
