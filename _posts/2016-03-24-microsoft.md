@@ -2,7 +2,7 @@
 layout: lecture
 title: Scientific writing with Microsoft (word) ?!
 category: lecture
-lecturers: Mohamed
+lecturers: Mohamed el Abbassi
 location: tba
 date: 2016-03-24 18:00:00 CEST
 ---
