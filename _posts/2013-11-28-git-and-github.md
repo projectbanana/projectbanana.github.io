@@ -1,7 +1,7 @@
 ---
 layout: lecture
 title: Git and Github
-category: given_lecture
+category: lecture
 lecturers: Manuel Baumann and Joost van Zwieten
 location: Lipkenszaal LB 01.150
 date: 2013-11-28 17:00:00 CET

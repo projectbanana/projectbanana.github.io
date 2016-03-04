@@ -13,26 +13,18 @@ from time to time...</p>
 
 <strong>Organisers:</strong> <a href="http://www.manuelbaumann.de">Manuel</a> and <a href="https://github.com/joostvanzwieten">Joost</a> 
 
-<h3>Upcoming lectures</h3>
-<ul>
-  {% for post in site.categories.lecture reversed %}
-    <li>
-      <a href="{{ post.url }}">
-        {{ post.date | date_to_string }}:
-        &quot;{{ post.title }}&quot; by {{ post.lecturers }}
-      </a>
-    </li>
-  {% endfor %}
-<h3>Previous lectures</h3>
-  {% for post in site.categories.given_lecture %}
-    <li>
-      <a href="{{ post.url }}">
-        {{ post.date | date_to_string }}:
-        &quot;{{ post.title }}&quot; by {{ post.lecturers }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+<div id="lectures">
+  <ul>
+    {% for post in site.categories.lecture %}
+      <li data-date="{{ post.date | date_to_xmlschema }}">
+        <a href="{{ post.url }}">
+          {{ post.date | date_to_string }}:
+          &quot;{{ post.title }}&quot; by {{ post.lecturers }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 
 <!-- vim: ts=2:sts=2:sw=2:et:tw=80
 -->
