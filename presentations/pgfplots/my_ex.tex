@@ -9,7 +9,7 @@
 \usepackage{color}
 
 \pgfplotscreateplotcyclelist{my_style}{%
-teal,every mark/.append style={fill=teal!80!black},mark=*\\%
+teal,every mark/.append style={fill=teal!80!black},mark=*, very thick\\%
 orange,every mark/.append style={fill=orange!80!black},mark=square*\\%
 cyan!60!black,every mark/.append style={fill=cyan!80!black},mark=diamond*\\%
 red!70!white,densely dashed,mark=star\\%
@@ -38,7 +38,8 @@ red,densely dashed,every mark/.append style={solid,fill=red!80!black},mark=otime
                      ymin = 1e-8,
                      grid=major,
                      mark repeat={5},
-                     cycle list name=my_style] 
+                     cycle list name=my_style,
+                     legend style={at={(1,1)},anchor=north east}] 
                      
 \addplot table [x = {iters}, y = {f1}] {resvec.dat};
 \addplot table [x = {iters}, y = {f2}] {resvec.dat};
@@ -47,7 +48,7 @@ red,densely dashed,every mark/.append style={solid,fill=red!80!black},mark=otime
 \addplot table [x = {iters}, y = {f5}] {resvec.dat};
 \addplot table [x = {iters}, y = {f6}] {resvec.dat};
 
-% \addplot[color=black,dashed] coordinates { (0,0.1) (170,0.1)}; % inner trashhold
+\addplot[color=black,dashed] coordinates { (0,0.1) (170,0.1)}; % inner trashhold
 \legend{$f_1=\phantom{0}5$ Hz,$f_2=\phantom{0}6$ Hz,$f_3=\phantom{0}7$ Hz,$f_4=\phantom{0}8$ Hz,$f_5=\phantom{0}9$ Hz,$f_6=10$ Hz} 
 
 \end{semilogyaxis} 
