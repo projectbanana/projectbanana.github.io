@@ -1,0 +1,41 @@
+#
+# demo laplace 
+#
+
+# compile
+make clean; make laplace
+
+# run on 1 core
+mpiexec -n 1 ./laplace
+
+# view solver
+mpiexec -n 1 ./laplace -ksp_view
+
+# view matrix (also explain in code)
+mpiexec -n 1 ./laplace -mat_view draw -draw_pause 2
+
+# view iteration
+mpiexec -n 1 ./laplace -ksp_monitor
+mpiexec -n 1 ./laplace -ksp_monitor_true_residual
+
+# change solver to gmres
+mpiexec -n 1 ./laplace -ksp_view -ksp_type gmres
+
+# change preconditioner to ILU
+mpiexec -n 1 ./laplace -ksp_view -pc_type ilu
+
+# change grid size
+mpiexec -n 1 ./laplace -nx 10 -ny 10 -nz 10 -pc_type ilu
+
+# change number of cores
+mpiexec -n 4 ./laplace -nx 10 -ny 10 -nz 10 -pc_type jacobi
+mpiexec -n 4 ./laplace -nx 10 -ny 10 -nz 10 -pc_type bjacobi
+mpiexec -n 4 ./laplace -nx 10 -ny 10 -nz 10 -pc_type gamg
+
+# weak scaling
+mpiexec -n 4 ./laplace -nx 10 -ny 10 -nz 10 -pc_type gamg -ksp_monitor
+mpiexec -n 4 ./laplace -nx 20 -ny 20 -nz 20 -pc_type gamg -ksp_monitor
+mpiexec -n 4 ./laplace -nx 40 -ny 40 -nz 40 -pc_type gamg -ksp_monitor
+
+# performance summary
+mpiexec -n 4 ./laplace -nx 10 -ny 10 -nz 10 -pc_type bjacobi -log_view
