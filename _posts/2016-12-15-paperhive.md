@@ -7,12 +7,14 @@ location: tba
 date: 2016-12-15 17:00:00 CET
 ---
 
-Reproducability of numerical results and test cases is notoriously hard in our field (and science in general). In this baNaNa session we want to try to use this [repository] as an example for reproducability.
+I want to show you the Browser-based tool [paperhive] - the coworking hub for researchers. Paperhive is simplifying research communication and transforms reading into a process of collaboration.
 
-Bring your linux laptop with python3 on it, and sudo rights ;)
+Paperhive is a Berlin based startup and has been co-founded by mathematician [Andre Gaul].
 
-* Recent [best practice] report on numerical experiments 
+* Stay updated with paperhive's  [twitter] account
+* Discussion of [NLA paper]
 
-
-[best practice]: http://arxiv.org/abs/1607.01191
-[repository]: https://github.com/ManuelMBaumann/elastic_benchmarks
+[Andre Gaul]:https://andre.gaul.io/
+[paperhive]: https://paperhive.org/
+[twitter]: https://twitter.com/paperhive?lang=en
+[NLA paper]: https://paperhive.org/documents/p6ojnrzTZM5p/discussions
