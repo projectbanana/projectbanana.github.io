@@ -1,0 +1,18 @@
+---
+layout: lecture
+title: Paperhive
+category: lecture
+lecturers: Manuel
+location: tba
+date: 2016-12-15 17:00:00 CET
+---
+
+Reproducability of numerical results and test cases is notoriously hard in our field (and science in general). In this baNaNa session we want to try to use this [repository] as an example for reproducability.
+
+Bring your linux laptop with python3 on it, and sudo rights ;)
+
+* Recent [best practice] report on numerical experiments 
+
+
+[best practice]: http://arxiv.org/abs/1607.01191
+[repository]: https://github.com/ManuelMBaumann/elastic_benchmarks
