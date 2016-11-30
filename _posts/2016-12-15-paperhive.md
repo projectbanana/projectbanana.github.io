@@ -12,9 +12,12 @@ I want to show you the Browser-based tool [paperhive] - the coworking hub for re
 Paperhive is a Berlin based startup and has been co-founded by mathematician [Andre Gaul].
 
 * Stay updated with paperhive's  [twitter] account
-* Discussion of [NLA paper]
+* Some active discussions: [1], [2]
 
 [Andre Gaul]:https://andre.gaul.io/
 [paperhive]: https://paperhive.org/
 [twitter]: https://twitter.com/paperhive?lang=en
 [NLA paper]: https://paperhive.org/documents/p6ojnrzTZM5p/discussions
+[1]:https://paperhive.org/documents/YuDCGeiMp0mS?a=d:wreIKQzl4Vmk
+[2]:https://paperhive.org/documents/X3cktCcuAJRj
+
