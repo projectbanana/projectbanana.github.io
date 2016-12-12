@@ -3,7 +3,7 @@ layout: lecture
 title: Paperhive
 category: lecture
 lecturers: Manuel
-location: tba
+location: 36 (EWI) - van der Poelzaal
 date: 2016-12-15 17:00:00 CET
 ---
 
