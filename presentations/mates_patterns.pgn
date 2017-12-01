@@ -1,0 +1,461 @@
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Anastasia's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/4N1pk/8/R7/8/8/8/4K3 w - - 0 1"]
+
+
+	   1.	Rh5#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Anderssen's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "6k1/6P1/5K2/8/8/8/8/7R w - - 0 1"]
+
+
+	   1.	Rh8#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Arabian mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7k/R7/5N2/8/8/8/8/4K3 w - - 0 1"]
+
+
+	   1.	Rh7#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Back-rank mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "6k1/5ppp/8/8/8/8/3R4/4K3 w - - 0 1"]
+
+
+	   1.	Rd8#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Bishop and knight mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7k/4B3/6KN/8/8/8/8/8 w - - 0 1"]
+
+
+	   1.	Bf6#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Blackburne's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "5rk1/8/8/6N1/8/3B4/1B6/3K4 w - - 0 1"]
+
+
+	   1.	Bh7#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Blind swine mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "5rk1/3RR1pp/8/8/8/8/8/4K3 w - - 0 1"]
+
+
+	   1.	Rxg7+ 	Kh8   
+	   2.	Rxh7+ 	Kg8   
+	   3.	Rdg7# 
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Boden's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "2kr4/3p4/8/8/5B2/3B4/8/4K3 w - - 0 1"]
+
+
+	   1.	Ba6#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Box mate (Rook mate)"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "3k4/8/3K4/8/8/8/8/R7 w - - 0 1"]
+
+
+	   1.	Ra8#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Cozio's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/1Q6/8/6pk/5q2/8/6K1 w - - 0 1"]
+
+
+	   1.	Qh6+  	Kg3   
+	   2.	Qh2#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Damiano's bishop mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "5k2/8/6B1/3Q4/8/8/8/4K3 w - - 0 1"]
+
+
+	   1.	Qf7#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Damiano's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "5rk1/6p1/6P1/8/8/7Q/8/6K1 w - - 0 1"]
+
+
+	   1.	Qh7#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Double bishop mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7k/7p/8/3B4/8/B7/8/4K3 w - - 0 1"]
+
+
+	   1.	Bb2#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Dovetail mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "1r6/pk6/8/3P4/8/8/2Q5/4K3 w - - 0 1"]
+
+
+	   1.	Qc6#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Epaulette mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "3rkr2/1p6/2p5/8/2Q5/1P6/P1P5/1K6 w - - 0 1"]
+
+
+	   1.	Qe6#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Greco's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7k/6p1/8/3BQ3/8/8/8/4K3 w - - 0 1"]
+
+
+	   1.	Qh5#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "h-file mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "6k1/5p2/6p1/8/3B4/7R/8/4K3 w - - 0 1"]
+
+
+	   1.	Rh8#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Hook mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7R/4kp2/5N2/4P3/8/8/8/4K3 w - - 0 1"]
+
+
+	   1.	Re8#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Kill Box mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "3r4/6P1/2R3K1/k5P1/2Q5/8/3q4/8 w - - 0 1"]
+
+
+	   1.	Ra6#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "King and two bishops mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7k/8/3BB2K/8/8/8/8/8 w - - 0 1"]
+
+
+	   1.	Be5#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "King and two knights mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7k/8/5N1K/4N3/8/8/p7/8 w - - 0 1"]
+
+
+	   1.	Ng6#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Légal mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "3q1b2/4kB2/3p4/4N3/8/2N5/8/4K3 w - - 0 1"]
+
+
+	   1.	Nd5#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Lolli's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "6k1/5p2/5PpQ/8/8/8/8/4K3 w - - 0 1"]
+
+
+	   1.	Qg7#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Max Lange's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "2Q5/5Bpk/7p/8/8/8/8/4K3 w - - 0 1"]
+
+
+	   1.	Qg8#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Morphy's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "3B3k/5p1p/8/8/8/8/8/4K1R1 w - - 0 1"]
+
+
+	   1.	Bf6#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Opera mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "4k3/5p2/8/6B1/3R4/8/8/4K3 w - - 0 1"]
+
+
+	   1.	Rd8#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Pillsbury's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "5rk1/6pp/8/8/3B4/8/8/4K1R1 w - - 0 1"]
+
+
+	   1.	Rxg7+ 	Kh8   
+	   2.	Rg1+  	Rf6   
+	   3.	Bxf6# 
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Queen mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "3k4/7Q/3K4/8/8/8/8/8 w - - 0 1"]
+
+
+	   1.	Qd7#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Réti's mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "1nb5/1pk5/2p5/6B1/8/8/8/3RK3 w - - 0 1"]
+
+
+	   1.	Bd8#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Smothered mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "6rk/6pp/8/6N1/8/8/8/2K5 w - - 0 1"]
+
+
+	   1.	Nf7#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Suffocation mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "5rk1/5p1p/5B2/5N2/8/8/3q2PP/7K w - - 0 1"]
+
+
+	   1.	Ne7#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Swallow's tail mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "3r1r2/4k3/R6Q/8/8/8/8/K7 w - - 0 1"]
+
+
+	   1.	Qe6#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Corner mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7k/7p/7N/8/8/8/8/4K1R1 w - - 0 1"]
+
+
+	   1.	Nf7#  
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "David and Goliath mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/8/7R/pkp5/1n6/PP6/4K3 w - - 0 1"]
+
+
+	   1.	a3#   
+1-0
+
+[Event "Mate patterns"]
+[Site ""]
+[Date "2017.12.01"]
+[Round ""]
+[White "Staircase mate"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/3k4/6R1/7R/8/8/8/3K4 w - - 0 1"]
+
+
+	   1.	Rh7+  	Ke8   
+	   2.	Rg8#  
+1-0
+
