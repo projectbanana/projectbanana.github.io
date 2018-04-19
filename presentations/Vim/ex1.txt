@@ -1,0 +1,6 @@
+# In the line below this comments say hello a hundred times
+# Solution (to decode the solution: # visual select and type # !python -m base64 -d
+# IyAxMDBpaGVsbG8gPGMtWz4K
+# To exit vim go to normal mode and :wq<enter> (save and exit) or :q!<enter>
+# (ignore the changes and exit). In normal mode ZZ is the same as save and exit
+
