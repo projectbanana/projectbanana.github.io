@@ -1,6 +1,6 @@
 ---
 layout: lecture
-title: An introduction to Julia
+title: MapReduce
 category: lecture
 lecturers: [Reinaldo Astudillo]
 location: 3.W510 (Bayes), Building 28 
