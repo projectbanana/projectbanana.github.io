@@ -10,3 +10,5 @@ date: 2019-12-05 16:30:00 CET
 In this talk we will learn about [MapReduce], a framework that can be used to process huge amounts of data, in parallel, on large clusters in a reliable manner.   
 
 [MapReduce]:https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm
+
+![mendeley](/images/mapreduce.jpg)
